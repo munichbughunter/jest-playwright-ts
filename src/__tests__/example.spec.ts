@@ -1,4 +1,3 @@
-// required line as long as there are no imports defined in this file
 export { };
 
 describe('First UI Test', () => {

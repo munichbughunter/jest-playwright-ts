@@ -1,70 +1,71 @@
 {
     "parser": "@typescript-eslint/parser",
     "ignorePatterns": [
-        "node_modules/",
-        "reports/"
+        "node_modules/",  
+        "reports/"  
+
     ],
-    "extends": [
-        "airbnb",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:import/typescript",
-        "plugin:playwright/jest-playwright"
+    "extends": [  
+        "airbnb",  
+        "plugin:@typescript-eslint/recommended",  
+        "plugin:import/typescript",  
+        "plugin:playwright/jest-playwright"  
     ],
-    "plugins": [
-        "import"
-    ],
-    "parserOptions": {
-        "ecmaVersion": 2018,
-        "sourceType": "module",
-        "ecmaFeatures": {},
-        "editor.codeActionsOnSave": {
-            "source.fixAll": true
+    "plugins": [  
+        "import"  
+    ],  
+    "parserOptions": {  
+        "ecmaVersion": 2018,  
+        "sourceType": "module",  
+        "ecmaFeatures": {},  
+        "editor.codeActionsOnSave": {  
+            "source.fixAll": true  
         }
     },
-    "rules": {
-        "playwright/missing-playwright-await":[
-            "error",
+    "rules": {  
+        "playwright/missing-playwright-await":[  
+            "error",  
             {
-                "customMatchers": [
-                    "toBeCustomThing"
+                "customMatchers": [  
+                    "toBeCustomThing"  
                 ]
             }
         ],
-        "import/extensions": [
-            "error",
+        "import/extensions": [  
+            "error",  
             {
-                "extensions": [
-                    ".js",
-                    ".ts"
+                "extensions": [  
+                    ".js",  
+                    ".ts"  
                 ]
             }
         ],
-        "indent": [
-            "error",
-            4,
+        "indent": [  
+            "error",  
+            4,  
             {
-                "SwitchCase": 1
+                "SwitchCase": 1  
             }
         ],
-        "max-len": "off",
-        "no-empty-function": "off",
-        "@typescript-eslint/no-empty-function": "off",
-        "class-methods-use-this": "off",
-        "no-nested-ternary": "off",
-        "max-classes-per-file": "off",
-        "import/no-extraneous-dependencies": "off",
-        "no-plusplus": "off",
-        "import/prefer-default-export": "off",
-        "import/no-named-as-default": "off",
-        "import/no-named-as-default-member": "off",
-        "no-use-before-define": "off",
-        "@typescript-eslint/no-use-before-define": [
-            "error"
+        "max-len": "off",  
+        "no-empty-function": "off",  
+        "@typescript-eslint/no-empty-function": "off",  
+        "class-methods-use-this": "off",  
+        "no-nested-ternary": "off",  
+        "max-classes-per-file": "off",  
+        "import/no-extraneous-dependencies": "off",  
+        "no-plusplus": "off",  
+        "import/prefer-default-export": "off",  
+        "import/no-named-as-default": "off",  
+        "import/no-named-as-default-member": "off",  
+        "no-use-before-define": "off",  
+        "@typescript-eslint/no-use-before-define": [  
+            "error"  
         ],
-        "no-shadow": "off",
-        "@typescript-eslint/ban-types": "off"
+        "no-shadow": "off",  
+        "@typescript-eslint/ban-types": "off"  
     },
-    "globals": {
-        "jest": true
+    "globals": {  
+        "jest": true  
     }
 }
